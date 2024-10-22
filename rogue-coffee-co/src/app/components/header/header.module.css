@@ -1,15 +1,13 @@
-
 .headerContainer{
     display: flex;
     align-items: center;
     padding: 0 20px;
-
     background: var(--background);
     color: var(--foreground);
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    justify-content: space-evenly;
 }
 
 .headerLogo{
@@ -17,11 +15,34 @@
     justify-content: center;
 }
 
-.burger{
+.burger {
     display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+.menu{
+    top: 0;
+    height: 20vh;
+    width: 250px;
+    background-color: #777777;
+    padding: 2rem;
+  }
+
+.close-menu{
+  }
+
+
+.list{
+    color:black;
+    list-style: none;
 }
-
-
 
 @media screen and (max-width: 768px){
     .headerContainer{
