@@ -20,7 +20,7 @@ export default function Header() {
 
     {menuOpen && (
         <nav className={styles.menu}>
-          <button className="close-menu" onClick={toggleMenu}>
+          <button className={styles.closeMenu} onClick={toggleMenu}>
           <VscChromeClose />
           </button>
           <ul className={styles.list}>
